@@ -15,5 +15,4 @@ RUN curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key
 
 # Pre-pull Kubernetes images
 COPY k8s-pull.sh /usr/bin/
-RUN chmod +x /usr/bin/k8s-pull.sh && k8s-pull.sh $k8s_version 
-$flannel_version && rm /usr/bin/k8s-pull.sh
+RUN chmod +x /usr/bin/k8s-pull.sh && k8s-pull.sh $k8s_version $flannel_version && rm /usr/bin/k8s-pull.sh
