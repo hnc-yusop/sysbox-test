@@ -1,4 +1,4 @@
-FROM sysbox-base
+FROM stg-orca-harbor.cloud.hancom.com/cluster-test/sysbox-base:v0.0.1
 ARG k8s_version=v1.20.12
 ARG flannel_version=v0.15.1
 
